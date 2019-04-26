@@ -15,6 +15,8 @@ Affiliation based advertisement is approximately a **$8 billion** industry and u
 
 Advertiser join the network and create a **Smart Contract** for an offer. Offer details are stored in IPFS with HASH of offer data in the contract as a transaction Publishers join the network and browse available offers from Advertisers and accept offers and join the Smart Contract. Each Smart Contract will have a set of Publishers who accepted T&C of the offer. Publisher place the offers on their website. Consumers go to the publisher website and click on the offer. **Click is tracked** as transaction in the Smart Contract with detail data stored in IPFS and consumer is redirected to offer URL. Consumer completes the required action at the redirected Advertiser offer URL. Advertiser confirms the offer conversion as a transaction on the Smart Contract and store the conversion data in the **IPFS**.
 
+**Step by step working can also be seen [here](docs/Ad-Chain-Working.pdf)**.
+
 ## Setup
 
  * Node should be installed
@@ -132,15 +134,17 @@ Go to localhost:3000/advertiser
 ```
 Create a profile for advertiser using MetaMask.
 ```
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/adv_sign_1.png)
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/adv_sign_2.png)
+![alt text](docs/adv_sign_1.png)
+
+![alt text](docs/adv_sign_2.png)
 
 * Offer Creation
 ```
 Create an offer with filling up needed information.
 ```
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/adv_off_1.png)
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/adv_off_2.png)
+![alt text](docs/adv_off_1.png)
+
+![alt text](docs/adv_off_2.png)
 
 ### Publisher creation and Offer registration
 
@@ -154,16 +158,18 @@ Go to localhost:3000/publisher
 Create a profile for publisher using MetaMask preferably different account
 from advertisers just for simplicity sake.
 ```
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/pub_sign_1.png)
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/pub_sign_2.png)
+![alt text](docs/pub_sign_1.png)
+
+![alt text](docs/pub_sign_2.png)
 
 * Offer Registration
 ```
 Register to an existing offer listed out in the all offers sections,
 where there will be a collection of offers from all the advertisers.
 ```
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/pub_off_1.png)
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/pub_off_2.png)
+![alt text](docs/pub_off_1.png)
+
+![alt text](docs/pub_off_2.png)
 
 ### Click Generation
 ```
@@ -171,8 +177,9 @@ Ideally this click generation has to be organised from Publisher Back-end,
 but for time being and easy demo, we are creating it from the publisher page.
 Just fill in the details and submit the form.
 ```
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/click_gen_1.png)
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/click_gen_2.png)
+![alt text](docs/click_gen_1.png)
+
+![alt text](docs/click_gen_2.png)
 
 ### Conversion Generation
 ```
@@ -181,5 +188,6 @@ time being we skipped. Here you will provide the UI with Publisher Contract Addr
 and Click Id which you just generated in the previous step and there you go
 with the conversion.
 ```
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/conv_gen_1.png)
-![alt text](https://github.com/sayak119/Ad-Chain/blob/master/flow_images_docs/conv_gen_2.png)
+![alt text](docs/conv_gen_1.png)
+
+![alt text](docs/conv_gen_2.png)
